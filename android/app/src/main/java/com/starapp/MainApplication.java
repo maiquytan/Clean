@@ -9,8 +9,10 @@ import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;
+import com.calendarevents.RNCalendarEventsPackage;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
+// import com.rt2zz.reactnativecontacts.ReactNativeContacts;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -40,6 +42,13 @@ public class MainApplication extends Application implements ReactApplication {
   public ReactNativeHost getReactNativeHost() {
     return mReactNativeHost;
   }
+
+  // @Override
+  // protected List<ReactPackage> getPackages() {
+  //   return Arrays.<ReactPackage>asList(
+  //     new MainReactPackage(),
+  //     new ReactNativeContacts()); // <------ add this
+  // }
 
   @Override
   public void onCreate() {

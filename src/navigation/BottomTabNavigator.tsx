@@ -3,11 +3,12 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createStackNavigator} from '@react-navigation/stack';
 
 import {Icon} from 'src/components/atoms';
-import HomeScreen from 'src/scenes/home';
+
 import MyPageScreen from 'src/scenes/myPage';
 import {colors, images} from 'src/themes';
-import {HOME_SCREEN, IMAGE_LIST, MY_PAGE_SCREEN} from './appRouters';
-import ImageList from 'src/scenes/photoClean/imageList';
+import {HOME_SCREEN,  MY_PAGE_SCREEN} from './appRouters';
+import HomeScreen from 'src/scenes/home';
+
 
 const Tab = createBottomTabNavigator();
 
@@ -64,14 +65,6 @@ const BottomTab = () => {
           tabBarIcon: ({}) => <Icon source={images.icUser} />,
         }}
       />
-      {/* <Tab.Screen
-        name="Photo"
-        component={PhotoStack}
-        options={{
-          tabBarLabel: 'Photo',
-          tabBarIcon: ({}) => <Icon source={images.icUser} />,
-        }}
-      /> */}
     </Tab.Navigator>
   );
 };

@@ -12,7 +12,7 @@ const LOGIN_SCREEN = 'LoginScreen';
 const REGISTER_SCREEN = 'RegisterScreen';
 const EXIST_USER_SCREEN = 'ExistUserScreen';
 
-const IMAGE_LIST = 'ImageList';
+const SETTING = 'setting';
 
 const SPLASH = 'Splash';
 
@@ -20,7 +20,7 @@ export {
   AUTH_STACK,
   BOTTOM_TAB_STACK,
   HOME,
-  IMAGE_LIST,
+  SETTING,
   HOME_SCREEN,
   LOGIN_SCREEN,
   MY_PAGE_SCREEN,
